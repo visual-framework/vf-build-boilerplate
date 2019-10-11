@@ -14,7 +14,8 @@
     "vfNamespace": "vfbuild-",
     "vfComponentPath": "./src/components",
     "vfBuildDestination": "./build/vf-build-boilerplate",
-    "vfThemePath": "@frctl/mandelbrot"
+    "vfThemePath": "@frctl/mandelbrot",
+    "vfDeployDirectory": "vf-build-boilerplate"
   },
   "scripts": {
     "build": "gulp build && echo \"🏋 Build completed\" && exit 0",

@@ -89,7 +89,7 @@ gulp.task('browser-sync', function(done) {
   browserSync.init({
     server: {
           baseDir: './build',
-          index: 'vf-build-boilerplate/index.html'
+          index: deployDirectory+'/index.html'
         }
   });
   done();
