@@ -536,7 +536,7 @@
     "@visual-framework/vf-list" "^1.0.0-beta.7"
     "@visual-framework/vf-text" "^1.0.0-beta.7"
 
-"@visual-framework/vf-core@^2.0.0-beta.3":
+"@visual-framework/vf-core@^2.0.0-beta.4":
   version "2.0.0-beta.4"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-core/-/vf-core-2.0.0-beta.4.tgz#19c9738d4ad6e7386f878d0fd2ef680c137f3796"
   integrity sha512-pFjPCox96lbtE3rD5cvVWfJzKJcuWFx7W19fe8Vp5fzfRMB1NdBPYlNoKvJYTcDD7tY81ifl8EPumC0+y30ZDg==

@@ -1,4 +1,5 @@
 const gulp  = require('gulp');
+const browserSync = require('browser-sync').create();
 var   fractalBuildMode;
 
 // -----------------------------------------------------------------------------
@@ -42,6 +43,8 @@ require('./node_modules/\@visual-framework/vf-core/tools/gulp-tasks/_gulp_rollup
 gulp.task('watch', function() {
   gulp.watch(['./src/components/**/*.scss', '!./src/components/**/package.variables.scss'], gulp.parallel('vf-css'));
   gulp.watch(['./src/components/**/*.js'], gulp.parallel('vf-scripts'));
+  gulp.watch(['./src/pages/**/*'], gulp.series('pages'));
+  gulp.watch(['./build/**/*'], gulp.series('browser-reload'));
 });
 
 gulp.task('set-to-development', function(done) {
@@ -59,7 +62,6 @@ gulp.task('set-to-static-build', function(done) {
 // Run build-assets, but only after we wait for fractal to bootstrap
 // @todo: consider if this could/should be two parallel gulp tasks
 gulp.task('build-assets', function(done) {
-  let elev;
   global.vfBuilderPath   = __dirname + '/build/vf-core-components';
   // global.vfDocsPath      = __dirname + '/node_modules/\@visual-framework/vf-build-assets--extensions/fractal/docs';
   global.vfOpenBrowser   = false; // if you want to open a browser tab for the component library
@@ -70,13 +72,35 @@ gulp.task('build-assets', function(done) {
     console.log('Done building Fractal');
     done();
   }
+});
+
+// Copy pages to the build directory
+gulp.task('pages', function(){
+  return gulp.src('./src/pages/**/*')
+    .pipe(gulp.dest(buildDestionation));
 
 });
+
+// Serve locally
+gulp.task('browser-sync', function(done) {
+  browserSync.init({
+      server: {
+          baseDir: buildDestionation
+      }
+  });
+  done();
+});
+
+gulp.task('browser-reload', function(done) {
+  browserSync.reload();
+  done();
+});
+
 
 // Let's build this sucker.
 gulp.task('build', gulp.series(
   'vf-clean',
-  gulp.parallel('vf-css','vf-scripts','vf-component-assets'),
+  gulp.parallel('pages','vf-css','vf-scripts','vf-component-assets'),
   'set-to-static-build',
   'build-assets'
 ));
@@ -84,8 +108,9 @@ gulp.task('build', gulp.series(
 // Build and watch things during dev
 gulp.task('dev', gulp.series(
   'vf-clean',
-  gulp.parallel('vf-css','vf-scripts','vf-component-assets'),
+  gulp.parallel('pages','vf-css','vf-scripts','vf-component-assets'),
   'set-to-development',
   'build-assets',
+  'browser-sync',
   gulp.parallel('watch','vf-watch')
 ));

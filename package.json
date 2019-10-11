@@ -12,7 +12,7 @@
   "vfConfig": {
     "vfName": "VF Build Boilerplate",
     "vfNamespace": "vfbuild-",
-    "vfComponentPath": "./components",
+    "vfComponentPath": "./src/components",
     "vfBuildDestination": "./build",
     "vfThemePath": "@frctl/mandelbrot"
   },
@@ -28,7 +28,7 @@
     "@visual-framework/vf-banner": "1.0.0-alpha.7",
     "@visual-framework/vf-code-example": "^1.0.0-alpha.7",
     "@visual-framework/vf-content": "^1.0.0-beta.7",
-    "@visual-framework/vf-core": "^2.0.0-beta.3",
+    "@visual-framework/vf-core": "^2.0.0-beta.4",
     "@visual-framework/vf-design-tokens": "^1.0.0-beta.6",
     "@visual-framework/vf-divider": "^1.0.0-rc.7",
     "@visual-framework/vf-eleventy--extensions": "^1.0.0-alpha.11",
