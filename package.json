@@ -12,7 +12,7 @@
   "vfConfig": {
     "vfName": "VF Build Boilerplate",
     "vfNamespace": "vfbuild-",
-    "vfComponentPath": "./src/components",
+    "vfComponentPath": "./components",
     "vfBuildDestination": "./build",
     "vfThemePath": "@frctl/mandelbrot"
   },
