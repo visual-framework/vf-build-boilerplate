@@ -52,9 +52,7 @@ gulp.task('set-to-development', function(done) {
 
 gulp.task('set-to-static-build', function(done) {
   process.argv.push('--quiet');
-  fractalBuildMode = 'build';
-  // todo: switch build mode once vf-core beta.4 is out
-  // fractalBuildMode = 'dataobject'; // run fractal in server mode as there's no need for static html assets
+  fractalBuildMode = 'dataobject'; // run fractal in server mode as there's no need for static html assets
   done();
 });
 
