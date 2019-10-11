@@ -36,6 +36,9 @@ const componentPath = path.resolve('.', global.vfComponentPath).replace(/\\/g, '
 const componentDirectories = config.vfConfig.vfComponentDirectories || ['vf-core-components'];
 const buildDestionation = path.resolve('.', global.vfBuildDestination).replace(/\\/g, '/');
 
+// The directory the site will be deployed to (if any)
+const deployDirectory = config.vfConfig.vfDeployDirectory || "vf-build-boilerplate";
+
 // Tasks to build/run vf-core component system
 require('./node_modules/\@visual-framework/vf-core/tools/gulp-tasks/_gulp_rollup.js')(gulp, path, componentPath, componentDirectories, buildDestionation);
 
@@ -84,9 +87,10 @@ gulp.task('pages', function(){
 // Serve locally
 gulp.task('browser-sync', function(done) {
   browserSync.init({
-      server: {
-          baseDir: buildDestionation
-      }
+    server: {
+          baseDir: './build',
+          index: 'vf-build-boilerplate/index.html'
+        }
   });
   done();
 });
