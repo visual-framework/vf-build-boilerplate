@@ -5,7 +5,7 @@ A mininimal implementation to build VF 2.0 components into static CSS and JS to 
 > Looking for other ways to use Visual Framework 2.0 components?
 > [See the guide](https://visual-framework.github.io/vf-welcome/building/)
 
-## 1. Creating a new project powered by vf-build-boilerplate
+## Creating a new project powered by vf-build-boilerplate
 
 There are two methods you can use:
 
@@ -17,14 +17,14 @@ There are two methods you can use:
     - Click the "[Use this template](https://help.github.com/en/articles/creating-a-repository-from-a-template)" method; quick url: https://github.com/visual-framework/vf-build-boilerplate/generate
     - Follow the prompts and then clone the new project to your local machine
 
-## 2. Configuring your new site
+## Configuring the build
 
 - In `package.json` update `vfConfig`
 - If you need any ad hoc CSS and JS, add it in `./src/components/vf-local-overrides`
 
 Otherwise configure gulp like any other project.
 
-## 3. Developing your new site
+## Building assets, developing 
 
 1. You'll need to [install npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 1. If you don't have `yarn`, install it
@@ -35,31 +35,22 @@ Otherwise configure gulp like any other project.
    - `gulp dev` renders and serves
    - `gulp build` build static assets
 
-## 4. Adding Visual Framework components
+### Adding Visual Framework components
 
-To add a component, use the command line or install it manually.
+1. You'll need to [install npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+1. If you don't have `yarn`, install it
+   - https://yarnpkg.com/lang/en/docs/install/
+1. Install all the things
+   - `yarn install`
+1. Generate the site in `/build`
+   - `gulp dev` renders and serves
+   - `gulp build` build static assets
 
-### By package
+## Troubleshooting
 
-- installation: `yarn add @visual-framework/vf-logo`
-- updating components: `yarn upgrade-interactive --latest`
-  - alias: `yarn run update-components`
+Having problems? See https://visual-framework.github.io/vf-welcome/troubleshooting/
 
-### Manual installation for customisation
-
-1. Download a pattern
-2. Copy it to `./src/components/vf-component-name`
-
-### Create your own local component
-
-You can add a custom VF-compatible component to `./src/components` and use it in
-your site.
-
-- `gulp vf-component`
-
-You'll find a `vf-sample` component already placed in `./src/components`
-
-## 5. Footnotes
+## Footnotes
 
 - Why `yarn` and not `npm`?
   For the particular structure of the Visual Framework components, Yarn is considerably
