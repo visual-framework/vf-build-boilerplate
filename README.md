@@ -37,14 +37,16 @@ Otherwise configure gulp like any other project.
 
 ### Adding Visual Framework components
 
-1. You'll need to [install npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-1. If you don't have `yarn`, install it
-   - https://yarnpkg.com/lang/en/docs/install/
-1. Install all the things
-   - `yarn install`
-1. Generate the site in `/build`
-   - `gulp dev` renders and serves
-   - `gulp build` build static assets
+To add a component, use the command line or install it manually.
+
+- by package: `yarn add @visual-framework/vf-logo`
+    - updating components: `yarn upgrade-interactive --latest` (alias: `yarn run update-components`)
+- Manual installation for customisation
+    - Download a pattern
+    - Copy it to `./src/components/vf-component-name`
+- Create your own local component
+    - You can add a custom VF-compatible component to `./src/components` and use it in your site.
+    - `gulp vf-component`
 
 ## Troubleshooting
 
