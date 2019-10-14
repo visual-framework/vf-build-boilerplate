@@ -5,7 +5,7 @@ A mininimal implementation to build VF 2.0 components into static CSS and JS to 
 > Looking for other ways to use Visual Framework 2.0 components?
 > [See the guide](https://visual-framework.github.io/vf-welcome/building/)
 
-## 1. Creating a new project powered by vf-eleventy
+## 1. Creating a new project powered by vf-build-boilerplate
 
 There are two methods you can use:
 
@@ -22,7 +22,7 @@ There are two methods you can use:
 - In `package.json` update `vfConfig`
 - If you need any ad hoc CSS and JS, add it in `./src/components/vf-local-overrides`
 
-Otherwise configure gulp and eleventy as you would for any other project.
+Otherwise configure gulp like any other project.
 
 ## 3. Developing your new site
 
@@ -59,8 +59,7 @@ your site.
 
 You'll find a `vf-sample` component already placed in `./src/components`
 
-
-## 4. Footnotes
+## 5. Footnotes
 
 - Why `yarn` and not `npm`?
   For the particular structure of the Visual Framework components, Yarn is considerably
