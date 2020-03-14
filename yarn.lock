@@ -577,10 +577,10 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-divider/-/vf-divider-1.0.0-rc.7.tgz#87f3f754f971e17b8d539ca72a87c41019a4afea"
   integrity sha512-MKvvteHptlZ6zKqhOkeFpGieByk1mI78Crpe20gVqHVNSN+6K3leMn6xtdIjsksHGHiLl1UaEsbC7/TB2ffuNg==
 
-"@visual-framework/vf-favicon@1.0.0-beta.6":
-  version "1.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-favicon/-/vf-favicon-1.0.0-beta.6.tgz#5b6bf7af1e8e991f7d928d3c371ec1d771ffe8e5"
-  integrity sha512-uFUCbrBorqHJeuN9TlaQq3B7Isknw5jedXEAV795AlWYToiUzcTFSSdDWiSUPXpZRQQLCkjocGXAjBhp64q2Dw==
+"@visual-framework/vf-favicon@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-favicon/-/vf-favicon-1.0.1.tgz#f8f4bd2270ea21c1d18568ed61fd151847e91656"
+  integrity sha512-MwRokpJp16BsRzCjajtRQNJrI7lMU9r16J98KKBoV+N+w9TtQ4D6S0YMXq0HEzpEkU71vjcgrHxUITvx4XhHdg==
 
 "@visual-framework/vf-figure@^1.0.0-alpha.7":
   version "1.0.0-alpha.7"
