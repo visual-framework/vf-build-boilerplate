@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@visual-framework/embl-grid": "^1.0.3",
-    "@visual-framework/vf-banner": "1.0.3",
+    "@visual-framework/vf-banner": "1.0.5",
     "@visual-framework/vf-code-example": "^1.0.0",
     "@visual-framework/vf-content": "^1.0.8",
     "@visual-framework/vf-core": "^2.0.0-rc.4",
