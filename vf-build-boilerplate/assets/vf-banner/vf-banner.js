@@ -30,7 +30,7 @@ function vfBannerReset(vfBannerCookieNameAndVersion) {
  * Confirm a banner, initiate cookie logging
  */
 function vfBannerConfirm(banner,vfBannerCookieNameAndVersion) {
-  banner.classList += " vf-u-display-none";
+  banner.classList.add('vf-u-display-none');
   if (vfBannerCookieNameAndVersion !== 'null') {
     vfBannerSetCookie(vfBannerCookieNameAndVersion,true);
   }
@@ -161,7 +161,7 @@ function vfBannerInsert(banner,bannerId,scope) {
         var newButton = document.createElement('button');
         newButton.innerHTML = button;
         newButton = newButton.firstChild;
-        newButton.classList = 'vf-button vf-button--primary';
+        newButton.classList.add('vf-button','vf-button--primary');
         generatedBannerHtml += newButton.outerHTML;
       }
     });
@@ -170,7 +170,18 @@ function vfBannerInsert(banner,bannerId,scope) {
   // if there is a vfJsBannerButtonText and banner is blocking or dismissible,
   // add a button so user can close the banner
   if (banner.vfJsBannerButtonText && (banner.vfJsBannerState === 'blocking' || banner.vfJsBannerState === 'dismissible')) {
-    generatedBannerHtml += '<button class="vf-button vf-button--secondary" data-vf-js-banner-close>'+banner.vfJsBannerButtonText+'</button>';
+    if (banner.vfJsBannerButtonTheme == 'primary') {
+      generatedBannerHtml += '<button class="vf-button vf-button--primary" data-vf-js-banner-close>'+banner.vfJsBannerButtonText+'</button>';
+    }
+    else if (banner.vfJsBannerButtonTheme == 'secondary') {
+      generatedBannerHtml += '<button class="vf-button vf-button--secondary" data-vf-js-banner-close>'+banner.vfJsBannerButtonText+'</button>';
+    }
+    else if (banner.vfJsBannerButtonTheme == 'tertiary') {
+      generatedBannerHtml += '<button class="vf-button vf-button--tertary" data-vf-js-banner-close>'+banner.vfJsBannerButtonText+'</button>';
+    }
+    else {
+      generatedBannerHtml += '<button class="vf-button vf-button--secondary" data-vf-js-banner-close>'+banner.vfJsBannerButtonText+'</button>';
+    }
   }
 
   generatedBannerHtml += '</div>';
@@ -202,7 +213,7 @@ function vfBannerInsert(banner,bannerId,scope) {
     // if banner has been previously accepted
     if (vfBannerGetCookie(vfBannerCookieNameAndVersion) === 'true') {
       // banner has been accepted, close
-      targetBanner.classList += " vf-u-display-none";
+      targetBanner.classList.add('vf-u-display-none');
       // exit, nothng more to do
       return;
     }
