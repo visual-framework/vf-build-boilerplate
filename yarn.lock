@@ -1595,10 +1595,10 @@
     rollup-plugin-includepaths "^0.2.3"
     vinyl-source-stream "^2.0.0"
 
-"@visual-framework/vf-design-tokens@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-design-tokens/-/vf-design-tokens-1.0.7.tgz#d4b7026445ab38c072d9ae07c923f74068a43c96"
-  integrity sha512-FYy4IenTQmX6QdMOAUE240b3TRwwWPyHOcFBvY9r8Zbe2k/gba2RMC1DGPXjHfKLP01fiC6DI5mp9GFYMCLTGQ==
+"@visual-framework/vf-design-tokens@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-design-tokens/-/vf-design-tokens-3.0.0.tgz#afbf793ae0c23ae3bf6d36a3c1d5b3e5753aa074"
+  integrity sha512-6kQoZabcrLnaSnR0NQNW+Co8W2j9DDZc1rBuXaZZtbN0J71jen1/cRVbkp5W03egb+V9tWUo+vu/RWx4gKz4dQ==
 
 "@visual-framework/vf-divider@^1.0.0":
   version "1.0.0"
