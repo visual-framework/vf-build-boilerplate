@@ -1,6 +1,6 @@
 # VF Build Boilerplate
 
-A mininimal implementation to build VF 2.0 components into static CSS and JS to pair with your existing application or site.
+A minimal implementation to build VF 2.0 components into static CSS and JS to pair with your existing application or site.
 
 > Looking for other ways to use Visual Framework 2.0 components?
 > [See the guide](https://visual-framework.github.io/vf-welcome/building/)
@@ -46,6 +46,7 @@ To add a component, use the command line or install it manually.
     - Copy it to `./src/components/vf-component-name`
 - Create your own local component
     - You can add a custom VF-compatible component to `./src/components` and use it in your site.
+    - `yarn add vf-component-generator --dev`
     - `gulp vf-component`
 
 ## Troubleshooting
