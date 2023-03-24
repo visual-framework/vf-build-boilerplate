@@ -1194,9 +1194,7 @@
     "@visual-framework/vf-text" "^1.0.2"
 
 "@visual-framework/vf-core@^2.2.33":
-  version "2.2.33"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-core/-/vf-core-2.2.33.tgz#884e1b360a210b26f8d6fcc893f8174874f69e31"
-  integrity sha512-w+lSoAt0a+Bc7ByjY8zYuEU+Rby1Xje1MTNAK1EggR2Rrg8G7YL2lK05pf1IX1uwA18KjB8KM6cp23Ep2/Hppg==
+  version "2.2.39"
   dependencies:
     "@visual-framework/vf-component-generator" "^1.1.5"
     "@visual-framework/vf-component-initialization" "^1.1.7"
