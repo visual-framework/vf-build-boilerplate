@@ -1411,9 +1411,9 @@
   integrity sha512-l3PvjWhEumhIrQiia+sl/LFswpbAH71R4qmSUvIr3mzyvFmSe+8Z10LMuTVU9rIN1//NgGFGC9GvHIzZYDRkdA==
 
 "@visual-framework/vf-text@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-text/-/vf-text-1.0.2.tgz#5644649a9864f147ffd1dd3e7ad64758ceb4b5e3"
-  integrity sha512-mXSH3UhG0qE3b1jfeo1A8Mih13AGvTikuJbt+wxWTBpjHQuR2oQ/OcgXFg/2z6aAtk66ucQa5UJ5LaLQdEzNuA==
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-text/-/vf-text-1.1.1.tgz#228ab655aea248ef338cd1879094bfa2fca81f96"
+  integrity sha512-+qu9it2IsLPeQmHwR8YE7EksmpCMVCAldgT8VNEA4lp4kPVWy2K1GnwZR7Wcv8PA4UvHdEBkXItcecPwwyimhQ==
 
 "@visual-framework/vf-utility-classes@^2.0.0":
   version "2.0.0"
